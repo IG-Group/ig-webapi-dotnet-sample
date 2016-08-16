@@ -1,4 +1,5 @@
 ## IG Web API .NET Sample
+[![Build Status](https://travis-ci.org/IG-Group/ig-webapi-dotnet-sample.svg?branch=master)](https://travis-ci.org/IG-Group/ig-webapi-dotnet-sample)
 
 ### Overview
 This repository contains a .NET WPF sample application written in C# to access the IG REST and Streaming APIs.
