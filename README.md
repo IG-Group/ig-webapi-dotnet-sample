@@ -14,6 +14,7 @@ This repository contains a .NET WPF sample application written in C# to access t
     <add key="password" value="mydemopassword" />
     <add key="apikey" value="3b577d884a6ba7d2b0d036f443bec954ebf3cf14" />
 ```
+    Use the NuGet Package manager if necessary to update assembly references.
 
 3) Build and run the sample application.
 
@@ -22,4 +23,6 @@ This repository contains a .NET WPF sample application written in C# to access t
 **SampleWPFTrader** contains the WPF implementation.
 
 **IGWebApiClient** contains a REST and streaming client with DTO classes to access the IG Web API.
+
+**packages** contains 3rd party libraries located under **packages/3rdPartyDlls** (e.g. Lightstreamer client's DotNetClient_N2.dll) and those managed by NuGet's package manager.
 

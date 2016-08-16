@@ -157,7 +157,8 @@ PublishScripts/
 # except build/, which is used as an MSBuild target.
 !**/packages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
-#!**/packages/repositories.config
+!**/packages/repositories.config
+!**/packages/3rdPartyDlls
 # NuGet v3's project.json files produces more ignoreable files
 *.nuget.props
 *.nuget.targets
