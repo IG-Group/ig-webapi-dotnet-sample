@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWPFTrader", "SampleWPFTrader\SampleWPFTrader.csproj", "{C508076B-6E37-4EC2-9B4C-B669C9B6E71A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IGWebApiClient", "IGWebApiClient\IGWebApiClient.csproj", "{269D3A2F-289F-4A78-98FD-21E3F5AC5E4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C508076B-6E37-4EC2-9B4C-B669C9B6E71A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C508076B-6E37-4EC2-9B4C-B669C9B6E71A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C508076B-6E37-4EC2-9B4C-B669C9B6E71A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C508076B-6E37-4EC2-9B4C-B669C9B6E71A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C508076B-6E37-4EC2-9B4C-B669C9B6E71A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C508076B-6E37-4EC2-9B4C-B669C9B6E71A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C508076B-6E37-4EC2-9B4C-B669C9B6E71A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C508076B-6E37-4EC2-9B4C-B669C9B6E71A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C508076B-6E37-4EC2-9B4C-B669C9B6E71A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C508076B-6E37-4EC2-9B4C-B669C9B6E71A}.Release|x86.ActiveCfg = Release|Any CPU
+		{269D3A2F-289F-4A78-98FD-21E3F5AC5E4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{269D3A2F-289F-4A78-98FD-21E3F5AC5E4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{269D3A2F-289F-4A78-98FD-21E3F5AC5E4F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{269D3A2F-289F-4A78-98FD-21E3F5AC5E4F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{269D3A2F-289F-4A78-98FD-21E3F5AC5E4F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{269D3A2F-289F-4A78-98FD-21E3F5AC5E4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{269D3A2F-289F-4A78-98FD-21E3F5AC5E4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{269D3A2F-289F-4A78-98FD-21E3F5AC5E4F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{269D3A2F-289F-4A78-98FD-21E3F5AC5E4F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{269D3A2F-289F-4A78-98FD-21E3F5AC5E4F}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

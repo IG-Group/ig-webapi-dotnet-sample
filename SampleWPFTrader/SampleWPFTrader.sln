@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWPFTrader", "SampleWPFTrader.csproj", "{C508076B-6E37-4EC2-9B4C-B669C9B6E71A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C508076B-6E37-4EC2-9B4C-B669C9B6E71A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C508076B-6E37-4EC2-9B4C-B669C9B6E71A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C508076B-6E37-4EC2-9B4C-B669C9B6E71A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C508076B-6E37-4EC2-9B4C-B669C9B6E71A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{269D3A2F-289F-4A78-98FD-21E3F5AC5E4F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IGWebApiClient</RootNamespace>
+    <AssemblyName>IGWebApiClient</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Common\PropertyChangedBase.cs" />
+    <Compile Include="Common\PropertyEventDispatcher.cs" />
+    <Compile Include="IGResponse.cs" />
+    <Compile Include="IGRestApiClient.cs" />
+    <Compile Include="IGRestService.cs" />
+    <Compile Include="IGStreamingApi.cs" />
+    <Compile Include="Model\dto\endpoint\auth\session\v2\AuthenticationRequest.cs" />
+    <Compile Include="Model\dto\endpoint\auth\session\v2\AuthenticationResponse.cs" />
+    <Compile Include="Model\dto\endpoint\auth\encryptionkey\EncryptionKeyResponse.cs" />
+    <Compile Include="Model\dto\endpoint\accountactivity\activity\Activity.cs" />
+    <Compile Include="Model\dto\endpoint\accountactivity\activity\ActivityHistoryResponse.cs" />
+    <Compile Include="Model\dto\endpoint\accountactivity\transaction\Transaction.cs" />
+    <Compile Include="Model\dto\endpoint\accountactivity\transaction\TransactionHistoryResponse.cs" />
+    <Compile Include="Model\dto\endpoint\accountactivity\transaction\TransactionType.cs" />
+    <Compile Include="Model\dto\endpoint\accountbalance\AccountBalance.cs" />
+    <Compile Include="Model\dto\endpoint\accountbalance\AccountDetails.cs" />
+    <Compile Include="Model\dto\endpoint\accountbalance\AccountDetailsResponse.cs" />
+    <Compile Include="Model\dto\endpoint\accountswitch\AccountSwitchRequest.cs" />
+    <Compile Include="Model\dto\endpoint\accountswitch\AccountSwitchResponse.cs" />
+    <Compile Include="Model\dto\endpoint\application\operation\Application.cs" />
+    <Compile Include="Model\dto\endpoint\application\operation\ApplicationStatus.cs" />
+    <Compile Include="Model\dto\endpoint\application\operation\DeveloperUpdateApplicationRequest.cs" />
+    <Compile Include="Model\dto\endpoint\application\operation\DeveloperUpdateApplicationStatus.cs" />
+    <Compile Include="Model\dto\endpoint\application\operation\UpdateApplicationRequest.cs" />
+    <Compile Include="Model\dto\endpoint\auth\session\AccountDetails.cs" />
+    <Compile Include="Model\dto\endpoint\auth\session\AccountInfo.cs" />
+    <Compile Include="Model\dto\endpoint\auth\session\AccountType.cs" />
+    <Compile Include="Model\dto\endpoint\auth\session\AuthenticationRequest.cs" />
+    <Compile Include="Model\dto\endpoint\auth\session\AuthenticationResponse.cs" />
+    <Compile Include="Model\dto\endpoint\auth\session\RedirectEnvironment.cs" />
+    <Compile Include="Model\dto\endpoint\auth\session\transformer\ClientAccountValidation.cs" />
+    <Compile Include="Model\dto\endpoint\auth\silentlogin\AccountDetails.cs" />
+    <Compile Include="Model\dto\endpoint\auth\silentlogin\AccountInfo.cs" />
+    <Compile Include="Model\dto\endpoint\auth\silentlogin\SilentLoginRequest.cs" />
+    <Compile Include="Model\dto\endpoint\auth\silentlogin\SilentLoginResponse.cs" />
+    <Compile Include="Model\dto\endpoint\browse\BrowseMarketsResponse.cs" />
+    <Compile Include="Model\dto\endpoint\browse\HierarchyMarket.cs" />
+    <Compile Include="Model\dto\endpoint\browse\HierarchyNode.cs" />
+    <Compile Include="Model\dto\endpoint\browse\sprintmarkets\SprintMarketsListItem.cs" />
+    <Compile Include="Model\dto\endpoint\browse\sprintmarkets\SprintMarketsSearchResponse.cs" />
+    <Compile Include="Model\dto\endpoint\clientsentiment\ClientSentiment.cs" />
+    <Compile Include="Model\dto\endpoint\clientsentiment\ClientSentimentList.cs" />
+    <Compile Include="Model\dto\endpoint\confirms\AffectedDeal.cs" />
+    <Compile Include="Model\dto\endpoint\confirms\ConfirmsResponse.cs" />
+    <Compile Include="Model\dto\endpoint\confirms\DealStatus.cs" />
+    <Compile Include="Model\dto\endpoint\confirms\PositionStatus.cs" />
+    <Compile Include="Model\dto\endpoint\confirms\Reason.cs" />
+    <Compile Include="Model\dto\endpoint\funds\deposit\authorise3d\Authorise3DRequest.cs" />
+    <Compile Include="Model\dto\endpoint\funds\deposit\authorise3d\Authorise3DResponse.cs" />
+    <Compile Include="Model\dto\endpoint\funds\deposit\DepositRequest.cs" />
+    <Compile Include="Model\dto\endpoint\funds\deposit\DepositResponse.cs" />
+    <Compile Include="Model\dto\endpoint\funds\deposit\surcharge\SurchargeRequest.cs" />
+    <Compile Include="Model\dto\endpoint\funds\deposit\surcharge\SurchargeResponse.cs" />
+    <Compile Include="Model\dto\endpoint\funds\manage\add\AddCardRequest.cs" />
+    <Compile Include="Model\dto\endpoint\funds\manage\CardType.cs" />
+    <Compile Include="Model\dto\endpoint\funds\manage\delete\DeleteCardResponse.cs" />
+    <Compile Include="Model\dto\endpoint\funds\manage\edit\EditCardRequest.cs" />
+    <Compile Include="Model\dto\endpoint\funds\manage\PaymentCard.cs" />
+    <Compile Include="Model\dto\endpoint\funds\manage\retrieve\FundSourcesResponse.cs" />
+    <Compile Include="Model\dto\endpoint\funds\manage\transfer\TransferFundsRequest.cs" />
+    <Compile Include="Model\dto\endpoint\funds\manage\transfer\TransferFundsResponse.cs" />
+    <Compile Include="Model\dto\endpoint\funds\manage\type\AddEditCardResponse.cs" />
+    <Compile Include="Model\dto\endpoint\funds\withdraw\WithdrawRequest.cs" />
+    <Compile Include="Model\dto\endpoint\funds\withdraw\WithdrawResponse.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v1\CurrencyData.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v1\DealingRuleData.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v1\DealingRulesData.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v1\DepositBand.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v1\DepositBanding.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v1\DepositRateData.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v1\InstrumentData.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v1\MarketDetailsResponse.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v1\MarketExpiryData.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v1\MarketOrderPreference.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v1\MarketRolloverData.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v1\MarketSnapshotData.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v1\OpeningHours.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v1\SlippageFactorData.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v1\TimeRange.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v1\Unit.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v2\CurrencyData.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v2\DealingRuleData.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v2\DealingRulesData.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v2\DepositBand.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v2\DepositBanding.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v2\DepositRateData.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v2\InstrumentData.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v2\MarketDetailsListResponse.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v2\MarketDetailsResponse.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v2\MarketExpiryData.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v2\MarketOrderPreference.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v2\MarketRolloverData.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v2\MarketSnapshotData.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v2\OpeningHours.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v2\SlippageFactorData.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v2\TimeRange.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v2\TrailingStopsPreference.cs" />
+    <Compile Include="Model\dto\endpoint\marketdetails\v2\Unit.cs" />
+    <Compile Include="Model\dto\endpoint\positions\close\v1\ClosePositionRequest.cs" />
+    <Compile Include="Model\dto\endpoint\positions\close\v1\ClosePositionResponse.cs" />
+    <Compile Include="Model\dto\endpoint\positions\create\otc\v1\CreatePositionRequest.cs" />
+    <Compile Include="Model\dto\endpoint\positions\create\otc\v1\CreatePositionResponse.cs" />
+    <Compile Include="Model\dto\endpoint\positions\create\otc\v2\CreatePositionRequest.cs" />
+    <Compile Include="Model\dto\endpoint\positions\create\sprintmarkets\v1\CreateSprintMarketPosition.cs" />
+    <Compile Include="Model\dto\endpoint\positions\edit\v1\EditPositionRequest.cs" />
+    <Compile Include="Model\dto\endpoint\positions\edit\v1\EditPositionResponse.cs" />
+    <Compile Include="Model\dto\endpoint\positions\edit\v2\EditPositionRequest.cs" />
+    <Compile Include="Model\dto\endpoint\positions\get\otc\v1\MarketData.cs" />
+    <Compile Include="Model\dto\endpoint\positions\get\otc\v1\OpenPosition.cs" />
+    <Compile Include="Model\dto\endpoint\positions\get\otc\v1\OpenPositionData.cs" />
+    <Compile Include="Model\dto\endpoint\positions\get\otc\v1\PositionsResponse.cs" />
+    <Compile Include="Model\dto\endpoint\positions\get\otc\v2\MarketData.cs" />
+    <Compile Include="Model\dto\endpoint\positions\get\otc\v2\OpenPosition.cs" />
+    <Compile Include="Model\dto\endpoint\positions\get\otc\v2\OpenPositionData.cs" />
+    <Compile Include="Model\dto\endpoint\positions\get\otc\v2\PositionsResponse.cs" />
+    <Compile Include="Model\dto\endpoint\positions\get\sprintmarkets\v1\SprintMarketPosition.cs" />
+    <Compile Include="Model\dto\endpoint\positions\get\sprintmarkets\v1\SprintMarketsPositionsResponse.cs" />
+    <Compile Include="Model\dto\endpoint\positions\type\OrderActionType.cs" />
+    <Compile Include="Model\dto\endpoint\positions\type\OrderType.cs" />
+    <Compile Include="Model\dto\endpoint\prices\v1\Allowance.cs" />
+    <Compile Include="Model\dto\endpoint\prices\v1\Price.cs" />
+    <Compile Include="Model\dto\endpoint\prices\v1\PriceList.cs" />
+    <Compile Include="Model\dto\endpoint\prices\v1\PriceSnapshot.cs" />
+    <Compile Include="Model\dto\endpoint\prices\v2\Allowance.cs" />
+    <Compile Include="Model\dto\endpoint\prices\v2\Price.cs" />
+    <Compile Include="Model\dto\endpoint\prices\v2\PriceList.cs" />
+    <Compile Include="Model\dto\endpoint\prices\v2\PriceSnapshot.cs" />
+    <Compile Include="Model\dto\endpoint\search\Market.cs" />
+    <Compile Include="Model\dto\endpoint\search\SearchMarketsResponse.cs" />
+    <Compile Include="Model\dto\endpoint\settings\AccountSettingsResponse.cs" />
+    <Compile Include="Model\dto\endpoint\settings\UpdateAccountServiceRequest.cs" />
+    <Compile Include="Model\dto\endpoint\settings\UpdateAccountSettingsResponse.cs" />
+    <Compile Include="Model\dto\endpoint\type\Direction.cs" />
+    <Compile Include="Model\dto\endpoint\type\InstrumentType.cs" />
+    <Compile Include="Model\dto\endpoint\type\MarketStatus.cs" />
+    <Compile Include="Model\dto\endpoint\type\UnitType.cs" />
+    <Compile Include="Model\dto\endpoint\watchlists\manage\create\CreateWatchlistRequest.cs" />
+    <Compile Include="Model\dto\endpoint\watchlists\manage\create\CreateWatchlistResponse.cs" />
+    <Compile Include="Model\dto\endpoint\watchlists\manage\delete\DeleteWatchlistResponse.cs" />
+    <Compile Include="Model\dto\endpoint\watchlists\manage\edit\AddInstrumentToWatchlistRequest.cs" />
+    <Compile Include="Model\dto\endpoint\watchlists\manage\edit\AddInstrumentToWatchlistResponse.cs" />
+    <Compile Include="Model\dto\endpoint\watchlists\manage\edit\RemoveInstrumentFromWatchlistResponse.cs" />
+    <Compile Include="Model\dto\endpoint\watchlists\retrieve\ListOfWatchlistsResponse.cs" />
+    <Compile Include="Model\dto\endpoint\watchlists\retrieve\Watchlist.cs" />
+    <Compile Include="Model\dto\endpoint\watchlists\retrieve\WatchlistInstrumentsResponse.cs" />
+    <Compile Include="Model\dto\endpoint\watchlists\retrieve\WatchlistMarket.cs" />
+    <Compile Include="Model\dto\endpoint\workingorders\create\v1\CreateWorkingOrderRequest.cs" />
+    <Compile Include="Model\dto\endpoint\workingorders\create\v1\CreateWorkingOrderResponse.cs" />
+    <Compile Include="Model\dto\endpoint\workingorders\create\v2\CreateWorkingOrderRequest.cs" />
+    <Compile Include="Model\dto\endpoint\workingorders\delete\v1\DeleteWorkingOrderRequest.cs" />
+    <Compile Include="Model\dto\endpoint\workingorders\delete\v1\DeleteWorkingOrderResponse.cs" />
+    <Compile Include="Model\dto\endpoint\workingorders\edit\v1\EditWorkingOrderRequest.cs" />
+    <Compile Include="Model\dto\endpoint\workingorders\edit\v1\EditWorkingOrderResponse.cs" />
+    <Compile Include="Model\dto\endpoint\workingorders\edit\v2\EditWorkingOrderRequest.cs" />
+    <Compile Include="Model\dto\endpoint\workingorders\get\v1\MarketData.cs" />
+    <Compile Include="Model\dto\endpoint\workingorders\get\v1\WorkingOrder.cs" />
+    <Compile Include="Model\dto\endpoint\workingorders\get\v1\WorkingOrderData.cs" />
+    <Compile Include="Model\dto\endpoint\workingorders\get\v1\WorkingOrdersResponse.cs" />
+    <Compile Include="Model\dto\endpoint\workingorders\get\v2\MarketData.cs" />
+    <Compile Include="Model\dto\endpoint\workingorders\get\v2\TimeInForce.cs" />
+    <Compile Include="Model\dto\endpoint\workingorders\get\v2\WorkingOrder.cs" />
+    <Compile Include="Model\dto\endpoint\workingorders\get\v2\WorkingOrderData.cs" />
+    <Compile Include="Model\dto\endpoint\workingorders\get\v2\WorkingOrdersResponse.cs" />
+    <Compile Include="Model\dto\endpoint\workingorders\type\TimeInForce.cs" />
+    <Compile Include="Model\dto\endpoint\workingorders\type\Type.cs" />
+    <Compile Include="Model\dto\endpoint\workingorders\type\WorkingOrderRequestType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\Rsa.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="DotNetClient_N2">
+      <HintPath>..\packages\3rdPartyDlls\DotNetClient_N2.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\packages\3rdPartyDlls\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PCLCrypto">
+      <HintPath>..\packages\3rdPartyDlls\PCLCrypto.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Validation">
+      <HintPath>..\packages\Validation.2.3.7\lib\portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\WindowsBase.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\dto\endpoint\application\operation\transform\" />
+    <Folder Include="Model\dto\endpoint\browse\transform\" />
+    <Folder Include="Model\dto\endpoint\marketdetails\v1\transform\" />
+    <Folder Include="Model\dto\endpoint\marketdetails\v2\transform\" />
+    <Folder Include="Model\dto\endpoint\positions\get\otc\v1\transform\" />
+    <Folder Include="Model\dto\endpoint\positions\get\otc\v2\transform\" />
+    <Folder Include="Model\dto\endpoint\positions\transformer\" />
+    <Folder Include="Model\dto\endpoint\search\transformer\" />
+    <Folder Include="Model\dto\endpoint\watchlists\retrieve\transformer\" />
+    <Folder Include="Model\dto\endpoint\workingorders\get\v1\transform\" />
+    <Folder Include="Model\dto\endpoint\workingorders\get\v2\transform\" />
+    <Folder Include="Model\dto\endpoint\workingorders\transformer\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
