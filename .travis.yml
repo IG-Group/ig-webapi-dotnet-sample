@@ -1,2 +1,6 @@
 language: csharp
-solution: IGWebApiDotNetSample.sln
+solution: IGWebApiClient.sln
+branches:
+  except:
+    - master
+
