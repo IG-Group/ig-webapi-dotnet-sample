@@ -30,9 +30,13 @@ public class ClosePositionRequest{
 	///</Summary>
 	public decimal? level { get; set; }
 	///<Summary>
-	///True if a market order is required
+	///Order type
 	///</Summary>
 	public string orderType { get; set; }
+	///<Summary>
+        ///Time in force
+        ///</Summary>
+        public string timeInForce { get; set; }
 	///<Summary>
 	///Lightstreamer price quote identifier
 	///</Summary>
