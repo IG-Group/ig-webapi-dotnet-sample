@@ -169,8 +169,19 @@ namespace IGWebApiClient
                     break;
 
                 case "DELETE":
-                    var myDeleteTask = client.DeleteAsync(_baseUrl + uri);
-                    response = myDeleteTask.Result;                                
+                    Task<HttpResponseMessage> myDeleteTask;
+
+                    if (scontent != null)
+                    {
+                        scontent.Headers.Add("_method", "DELETE");
+                        myDeleteTask = client.PostAsync(_baseUrl + uri, scontent);
+                    }
+                    else
+                    {
+                        myDeleteTask = client.DeleteAsync(_baseUrl + uri);
+                    }
+
+                    response = myDeleteTask.Result;
                     break;
             }
 
