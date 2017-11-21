@@ -585,6 +585,16 @@ namespace IGWebApiClient
         }
 
         ///<Summary>
+        ///Creates a DMA Equity working order
+        ///@param createDMAWorkingOrderRequest Create DMA Equity working order request data
+        ///</Summary>
+
+        public async Task<IgResponse<CreateWorkingOrderResponse>> createDmaEquityWorkingOrderV1(dto.endpoint.workingorders.create.v1.CreateDmaEquityWorkingOrderRequest createDmaEquityWorkingOrderRequest)
+        {
+            return await _igRestService.RestfulService<CreateWorkingOrderResponse>("/gateway/deal/workingorders/dma/equity", HttpMethod.Post, "1", _conversationContext, createDmaEquityWorkingOrderRequest);
+        }
+
+        ///<Summary>
         ///Creates an OTC working order
         ///@param createWorkingOrderRequest Create working order request data
         ///</Summary>
@@ -604,6 +614,17 @@ namespace IGWebApiClient
         public async Task<IgResponse<EditWorkingOrderResponse>> editWorkingOrderV1(string dealId, dto.endpoint.workingorders.edit.v1.EditWorkingOrderRequest editWorkingOrderRequest)
         {
             return await _igRestService.RestfulService<EditWorkingOrderResponse>("/gateway/deal/workingorders/otc/" + dealId, HttpMethod.Put, "1", _conversationContext, editWorkingOrderRequest);
+        }
+
+        ///<Summary>
+        ///Updates an DMA working order
+        ///@pathParam dealId Deal identifier
+        ///@param editDmaEquityWorkingOrderRequest Update working order request data
+        ///</Summary>
+
+        public async Task<IgResponse<EditWorkingOrderResponse>> editDmaEquityWorkingOrderV1(string dealId, dto.endpoint.workingorders.edit.v1.EditDmaEquityWorkingOrderRequest EditDmaEquityWorkingOrderRequest)
+        {
+            return await _igRestService.RestfulService<EditWorkingOrderResponse>("/gateway/deal/workingorders/dma/equity/" + dealId, HttpMethod.Put, "1", _conversationContext, EditDmaEquityWorkingOrderRequest);
         }
 
         ///<Summary>
@@ -628,5 +649,15 @@ namespace IGWebApiClient
             return await _igRestService.RestfulService<DeleteWorkingOrderResponse>("/gateway/deal/workingorders/otc/" + dealId, HttpMethod.Delete, "1", _conversationContext, deleteWorkingOrderRequest);
         }
 
+        ///<Summary>
+        ///Deletes a DMA working order
+        ///@pathParam dealId Deal identifier
+        ///@param deleteWorkingOrderRequest Delete working order request data
+        ///</Summary>
+
+        public async Task<IgResponse<DeleteWorkingOrderResponse>> deleteDmaEquityWorkingOrder(string dealId, DeleteWorkingOrderRequest deleteWorkingOrderRequest)
+        {
+            return await _igRestService.RestfulService<DeleteWorkingOrderResponse>("/gateway/deal/workingorders/dma/equity" + dealId, HttpMethod.Delete, "1", _conversationContext, deleteWorkingOrderRequest);
+        }
     }
 }
