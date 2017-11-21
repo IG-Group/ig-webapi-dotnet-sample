@@ -184,11 +184,13 @@
     <Compile Include="Model\dto\endpoint\watchlists\retrieve\Watchlist.cs" />
     <Compile Include="Model\dto\endpoint\watchlists\retrieve\WatchlistInstrumentsResponse.cs" />
     <Compile Include="Model\dto\endpoint\watchlists\retrieve\WatchlistMarket.cs" />
+    <Compile Include="Model\dto\endpoint\workingorders\create\v1\CreateDmaEquityWorkingOrderRequest.cs" />
     <Compile Include="Model\dto\endpoint\workingorders\create\v1\CreateWorkingOrderRequest.cs" />
     <Compile Include="Model\dto\endpoint\workingorders\create\v1\CreateWorkingOrderResponse.cs" />
     <Compile Include="Model\dto\endpoint\workingorders\create\v2\CreateWorkingOrderRequest.cs" />
     <Compile Include="Model\dto\endpoint\workingorders\delete\v1\DeleteWorkingOrderRequest.cs" />
     <Compile Include="Model\dto\endpoint\workingorders\delete\v1\DeleteWorkingOrderResponse.cs" />
+    <Compile Include="Model\dto\endpoint\workingorders\edit\v1\EditDmaEquityWorkingOrderRequest .cs" />
     <Compile Include="Model\dto\endpoint\workingorders\edit\v1\EditWorkingOrderRequest.cs" />
     <Compile Include="Model\dto\endpoint\workingorders\edit\v1\EditWorkingOrderResponse.cs" />
     <Compile Include="Model\dto\endpoint\workingorders\edit\v2\EditWorkingOrderRequest.cs" />
