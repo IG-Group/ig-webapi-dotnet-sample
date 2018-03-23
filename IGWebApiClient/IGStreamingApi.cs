@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using Lightstreamer.DotNet.Client;
@@ -292,19 +293,19 @@ namespace IGWebApiClient
 		protected decimal? StringToNullableDecimal(string value)
 		{
 			decimal number;
-			return decimal.TryParse(value, out number) ? number : (decimal?)null;
+			return decimal.TryParse(value, NumberStyles.Any, new CultureInfo("en-US"), out number) ? number : (decimal?)null;
 		}
 
 		protected int? StringToNullableInt(string value)
 		{
 			int number;
-			return int.TryParse(value, out number) ? number : (int?)null;
+			return int.TryParse(value, NumberStyles.Any, new CultureInfo("en-US"), out number) ? number : (int?)null;
 		}
 
 		protected DateTime? EpocStringToNullableDateTime(string value)
 		{
 			ulong epoc;
-			if (!ulong.TryParse(value, out epoc))
+			if (!ulong.TryParse(value, NumberStyles.Any, new CultureInfo("en-US"), out epoc))
 			{
 				return null;
 			}
