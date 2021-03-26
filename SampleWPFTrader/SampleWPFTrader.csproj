@@ -147,7 +147,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="IgWebApiConnection.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
