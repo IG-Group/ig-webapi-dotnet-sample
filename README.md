@@ -4,19 +4,26 @@
 This repository contains a .NET WPF sample application written in C# to access the IG REST and Streaming APIs.
 
 ### Getting started
-1) Open the solution with Visual Studio 2015 or later.
 
-2) Configure the SampleWPFTrader **App.config** file:
-```
+1) Clone the repository
+
+2) Create a new file **IgWebApiConnection.config** in the SampleWPFTrader folder containing your Connection Data:
+
+```xml
+  <IgWebApiConnection>
     <!-- environment = demo|live -->
     <add key="environment" value="demo" />
     <add key="username" value="mydemouser" />
     <add key="password" value="mydemopassword" />
     <add key="apikey" value="3b577d884a6ba7d2b0d036f443bec954ebf3cf14" />
+  </IgWebApiConnection>
 ```
-    Use the NuGet Package manager if necessary to update assembly references.
 
-3) Build and run the sample application.
+3) Open the solution with Visual Studio 2015 or later.
+
+4) Use the NuGet Package manager if necessary to update assembly references.
+
+5) Build and run the sample application.
 
 ### Solution details
 

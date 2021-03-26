@@ -251,3 +251,6 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+# IG Web Api Connection Data
+/SampleWPFTrader/IgWebApiConnection.config
