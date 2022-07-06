@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using Lightstreamer.DotNet.Client;
@@ -114,23 +115,23 @@ namespace IGWebApiClient
 
                 if (!String.IsNullOrEmpty(midOpen))               
                 {
-                    lsL1PriceData.MidOpen = Convert.ToDecimal(midOpen);
+                    lsL1PriceData.MidOpen = Convert.ToDecimal(midOpen, CultureInfo.InvariantCulture);
                 }
                 if (!String.IsNullOrEmpty(high))        
                 {
-                    lsL1PriceData.High = Convert.ToDecimal(high);
+                    lsL1PriceData.High = Convert.ToDecimal(high, CultureInfo.InvariantCulture);
                 }
                 if (!String.IsNullOrEmpty(low))  
                 {
-                    lsL1PriceData.Low = Convert.ToDecimal(low);
+                    lsL1PriceData.Low = Convert.ToDecimal(low, CultureInfo.InvariantCulture);
                 }
                 if (!String.IsNullOrEmpty(change))
                 {
-                    lsL1PriceData.Change = Convert.ToDecimal(change);
+                    lsL1PriceData.Change = Convert.ToDecimal(change, CultureInfo.InvariantCulture);
                 }
                 if (!String.IsNullOrEmpty(changePct))
                 {
-                    lsL1PriceData.ChangePct = Convert.ToDecimal(changePct);
+                    lsL1PriceData.ChangePct = Convert.ToDecimal(changePct, CultureInfo.InvariantCulture);
                 }
                 if (!String.IsNullOrEmpty(updateTime))               
                 {
@@ -138,7 +139,7 @@ namespace IGWebApiClient
                 }
                 if (!String.IsNullOrEmpty(marketDelay))
                 {
-                    lsL1PriceData.MarketDelay = Convert.ToInt32(marketDelay);
+                    lsL1PriceData.MarketDelay = Convert.ToInt32(marketDelay, CultureInfo.InvariantCulture);
                 }
                 if (!String.IsNullOrEmpty(marketState))
                 {              
@@ -146,11 +147,11 @@ namespace IGWebApiClient
                 }
                 if (!String.IsNullOrEmpty(bid))
                 {
-                    lsL1PriceData.Bid = Convert.ToDecimal(bid);
+                    lsL1PriceData.Bid = Convert.ToDecimal(bid, CultureInfo.InvariantCulture);
                 }
                 if (!String.IsNullOrEmpty(offer))
                 {
-                    lsL1PriceData.Offer = Convert.ToDecimal(offer);
+                    lsL1PriceData.Offer = Convert.ToDecimal(offer, CultureInfo.InvariantCulture);
                 }
             }
             catch (Exception)
@@ -172,23 +173,23 @@ namespace IGWebApiClient
                                        
                 if (!String.IsNullOrEmpty(pnl))
                 {
-                    streamingAccountData.ProfitAndLoss = Convert.ToDecimal(pnl);
+                    streamingAccountData.ProfitAndLoss = Convert.ToDecimal(pnl, CultureInfo.InvariantCulture);
                 }
                 if (!String.IsNullOrEmpty(deposit))
                 {
-                    streamingAccountData.Deposit = Convert.ToDecimal(deposit);
+                    streamingAccountData.Deposit = Convert.ToDecimal(deposit, CultureInfo.InvariantCulture);
                 }
                 if (!String.IsNullOrEmpty(usedMargin))
                 {
-                    streamingAccountData.UsedMargin = Convert.ToDecimal(usedMargin);
+                    streamingAccountData.UsedMargin = Convert.ToDecimal(usedMargin, CultureInfo.InvariantCulture);
                 }
                 if (!String.IsNullOrEmpty(amountDue))
                 {
-                    streamingAccountData.AmountDue = Convert.ToDecimal(amountDue);
+                    streamingAccountData.AmountDue = Convert.ToDecimal(amountDue, CultureInfo.InvariantCulture);
                 }
                 if (!String.IsNullOrEmpty(availableCash))
                 {
-                    streamingAccountData.AmountDue = Convert.ToDecimal(availableCash);
+                    streamingAccountData.AmountDue = Convert.ToDecimal(availableCash, CultureInfo.InvariantCulture);
                 }
                
             }
