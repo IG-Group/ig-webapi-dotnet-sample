@@ -7,6 +7,7 @@ This repository contains a .NET WPF sample application written in C# to access t
 1) Open the solution with Visual Studio 2015 or later.
 
 2) Configure the SampleWPFTrader **App.config** file:
+(these are sample values, replace them with your proper username, password and apikey)
 ```
     <!-- environment = demo|live -->
     <add key="environment" value="demo" />
