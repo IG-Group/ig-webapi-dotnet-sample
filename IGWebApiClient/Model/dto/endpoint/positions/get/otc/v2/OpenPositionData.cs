@@ -14,6 +14,10 @@ public class OpenPositionData{
 	///</Summary>
 	public string createdDate { get; set; }
 	///<Summary>
+	///UTC Date the position was opened
+	///</Summary>
+	public string createdDateUTC { get; set; }
+	///<Summary>
 	///Deal identifier
 	///</Summary>
 	public string dealId { get; set; }

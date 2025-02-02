@@ -69,5 +69,9 @@ public class CreatePositionRequest{
 	///Currency. Restricted to available instrument currencies
 	///</Summary>
 	public string currencyCode { get; set; }
+	/// <summary>
+	/// A user-defined reference identifying the submission of the order [Constraint: Pattern(regexp="[A-Za-z0-9_\\-]{1,30}")]
+	/// </summary>
+	public string dealReference { get; set; }
 }
 }
