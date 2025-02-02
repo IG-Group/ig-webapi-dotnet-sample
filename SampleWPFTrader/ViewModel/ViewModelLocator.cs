@@ -1,5 +1,5 @@
 using GalaSoft.MvvmLight.Ioc;
-using Microsoft.Practices.ServiceLocation;
+using CommonServiceLocator;
 
 namespace SampleWPFTrader.ViewModel
 {
