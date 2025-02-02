@@ -149,6 +149,7 @@ namespace SampleWPFTrader.ViewModel
                             igpd.Model.StreamingPricesAvailable = position.market.streamingPricesAvailable;
                             igpd.Model.MarketStatus = position.market.marketStatus;
                             igpd.CreatedDate = position.position.createdDate;
+                            igpd.OpenLevel = position.position.level;
 
                             // This is our list of all positions that the client has...
                             if (Positions != null)
